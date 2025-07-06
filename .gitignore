@@ -1,0 +1,45 @@
+# Laravel specific
+/bootstrap/cache/
+/storage/*.key
+/vendor/
+.env
+.env.backup
+.env.*.bak
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+.idea/
+/.vscode/
+!/.vscode/settings.json
+!/.vscode/tasks.json
+!/.vscode/launch.json
+!/.vscode/extensions.json
+/public/hot
+/public/storage
+/node_modules/
+/public/build/
+
+# VS Code specific
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# OSX specific (if you are on a Mac)
+.DS_Store
+.Trashes
+Thumbs.db
+
+# PHPStorm specific (if you are also using PHPStorm)
+.idea/
+.vagrant/
+
+# Compiled files
+*.log
+*.sqlite
+*.bak
+*.swp
+.DS_Store
