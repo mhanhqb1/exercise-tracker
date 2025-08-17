@@ -42,4 +42,24 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+     /**
+     * Get the exercise sets created by the user.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function exerciseSets()
+    {
+        return $this->hasMany(ExerciseSet::class, 'created_by');
+    }
+
+    /**
+     * Get the workout logs for the user.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function workoutLogs()
+    {
+        return $this->hasMany(WorkoutLog::class);
+    }
 }
